@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to the Sunset Kitchen</title>
+    <style>
+      #headtitle{
+        background: wheat;
+        text-align: center;
+        font-family: 'Fantasy';
+      }
+      #update{ 
+        text-align: right;
+      }
+      #pic{ 
+        top:0%;
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        object-fit: cover;
+
+    
+      }
+  
+      #alert {
+        background: rgb(97, 112, 117)
+      }
+      #updatebody{
+        background: grey;
+      }
+  
+      #content{
+        text-align: center;
+        background: coral;
+        width: 1199px;
+        height: 700px; 
+        font-size: 20px;      
+        float:right;
+      }
+      #contentname{
+        text-align: center;
+      }
+      #menu{
+        background:lightskyblue;
+        width: 300px;
+        height: 700px;       
+   
+       
+      }
+      #menuname{
+        text-align: center;
+        font-size: auto;
+      }
+
+
+      .around{
+        background-color: lightcyan;
+        border: 1px solid black; 
+      }
+      
+      #textleft{
+        text-align: center;
+        display: inline;
+      }
+      #textright{
+        text-align: center;
+        display: inline;
+      }
+
+
+
+      
+    </style>
+
+
+
+  </head>
+  <body style="background-color:wheat;">
+    <div id=headtitle class=around>
+      <h1>Welcome To Sunset Kitchen</h1>
+      <p id=update>  <button id=updatebody onclick="textchange()">Update Body</button>  | <button id="alert">Alert</button> </p>
+      <img id="pic" src="C:\Users\faith\Documents\College(GSU)\Spring 2022\Web Programming\sunsetpic.jpg">
+    </div>
+
+    <script>
+      function textchange(){
+        document.getElementById("changetext").innerHTML = "Hello! I can guess your favorite recipe!";
+      }
+    </script>
+
+    <script>
+      document.getElementById("alert").addEventListener("click", clickAlert);
+      function clickAlert() {
+         alert ("Welcome to my Sunset Kitchen!");
+      }
+    </script>
+  
+    <div id=content class=around>
+      <h1 id=contentname>Content</h1>
+      <p id="changetext">Welcome to my Kitchen. I will be creating various types of recipes from all over the world</p>  
+    </div>
+    <div id=menu class=around>
+      <p id=menuname>Menu: <br> </p1>
+      <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales laoreet venenatis. Fusce vitae leo ut massa placerat pharetra eu at metus. Etiam fermentum nisl augue, vitae ultrices libero ultricies quis. Duis auctor nisl nec mi congue sollicitudin. Sed euismod, eros eget facilisis imperdiet, dolor enim lacinia ex, non congue neque metus in orci. Maecenas neque tellus, malesuada a aliquet non, rutrum mattis arcu. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam viverra velit non tortor faucibus, sed lacinia mauris condimentum. Mauris diam eros, consequat eu tincidunt vitae, pulvinar quis eros. Aliquam ut auctor est, et tincidunt velit. Sed ornare dolor quis tellus iaculis hendrerit. Pellentesque volutpat egestas orci, sit amet fermentum neque fermentum in. Vivamus blandit lacinia mauris, ac venenatis enim tincidunt et. In suscipit leo sit amet nulla iaculis scelerisque. Quisque nec lorem posuere, auctor velit sed, sagittis elit.
+        Integer. Pellentesque ut velit nisl. Suspendisse egestas dapibus elit in hendrerit. Pellentesque in ornare dui. Maecenas eros libero, rutrum eget mattis eu, porta nec justo. Sed imperdiet augue nec est mattis pulvinar. Vestibulum tristique arcu a risus faucibus, in dictum nulla hendrerit. In hac habitasse platea dictumst. Nulla ullamcorper, nibh et dictum condimentum, lectus neque sollicitudin massa, in pellentesque lorem urna.
+      </strong>
+    </div>
+    
+    <div id=foot class=around style="background-color: blanchedalmond;">
+      <p id=textleft style="width:80%; text-align: center;">@ 2022 Faith Akosile , All Rights Reserved </p> 
+      <p1 id="textright" style="text-align:right; width: 65%; float:right;"> Designed by Faith Akosile</p1>
+      
+    </div>
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+</html>
